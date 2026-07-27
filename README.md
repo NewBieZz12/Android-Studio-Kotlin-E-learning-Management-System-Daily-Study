@@ -104,7 +104,7 @@ app/
 Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/E-Learning-Management-System.git
+git clone https://github.com/NewBieZz12/Android-Studio-Kotlin-E-learning-Management-System-Daily-Study.git
 ```
 
 Open the project in Android Studio.
