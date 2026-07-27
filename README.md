@@ -71,7 +71,7 @@ A native Android application developed using **Kotlin** that provides an interac
 
 ```text
 app/
-├── java/
+├── kotlin/
 │   ├── activities/
 │   ├── adapters/
 │   ├── database/
