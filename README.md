@@ -207,6 +207,4 @@ Potential enhancements include:
 
 ---
 
-# 📄 License
-
-This project was developed as part of the **SWE401 – Programming Elective II** course at Xiamen University Malaysia.
+# 📄 Author HEE WEI JIE
