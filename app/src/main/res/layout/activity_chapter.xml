@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_cyan">
+
+    <LinearLayout
+        android:id="@+id/chapterToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="24dp">
+
+        <ImageView
+            android:id="@+id/chapterBackButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/arrow_back"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:tint="#001F3F" />
+
+        <TextView
+            android:id="@+id/chapterToolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Select Chapter"
+            android:textColor="#001F3F"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+    <ListView
+        android:id="@+id/lvChapters"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/chapterToolbar"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="4dp"
+        android:divider="@android:color/transparent"
+        android:backgroundTint="#001F3F"
+        android:dividerHeight="16dp" />
+
+</RelativeLayout>
+
+

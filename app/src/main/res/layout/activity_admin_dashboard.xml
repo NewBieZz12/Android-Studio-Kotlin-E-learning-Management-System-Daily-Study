@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/splash_cyan"> <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin Control Panel"
+        android:textColor="#000000" android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true" />
+
+    <Button
+        android:id="@+id/btnSignOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Out"
+        android:backgroundTint="#D32F2F"
+        android:textColor="#FFFFFF" android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>
+
+    <Button
+        android:id="@+id/btnCreateService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create New Service"
+        android:backgroundTint="#388E3C"
+        android:textColor="#FFFFFF" android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Database View Category:"
+        android:textColor="#000000" android:textSize="14sp"
+        android:layout_marginBottom="6dp" />
+
+    <Spinner
+        android:id="@+id/spinnerConsoleCategory"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:backgroundTint="#000000" android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/txtConsoleHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Database Monitor"
+        android:textColor="#333333" android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <ListView
+        android:id="@+id/lvConsoleMonitor"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@color/splash_cyan"
+        android:divider="#444444"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>

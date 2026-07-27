@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/txtWizardStepTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step 1: Create Lesson"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#4A6572"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject Category"
+            android:textColor="#777777"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+        <Spinner
+            android:id="@+id/spinnerAdminSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chapter"
+            android:textColor="#777777"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/etAdminTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:layout_marginBottom="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DBDBDB"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:id="@+id/layoutLessonInputs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="External Stream Source (YouTube URL)"
+                android:textColor="#4A6572"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/etAdminYoutubeLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Local Storage(.mp4)"
+                android:textColor="#4A6572"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp" />
+            <Button
+                android:id="@+id/btnPickLocalVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Local MP4 File"
+                android:backgroundTint="#4A6572"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"/>
+            <TextView
+                android:id="@+id/txtSelectedVideoPath"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No file selected yet"
+                android:textColor="#A0A0A0"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutExerciseInputs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Question"
+                android:textColor="#4A6572"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/etExerciseQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter the question here..."
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Option A"
+                android:textColor="#555555" />
+            <EditText
+                android:id="@+id/etOptA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First choice option value"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Option B"
+                android:textColor="#555555" />
+            <EditText
+                android:id="@+id/etOptB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Second choice option value"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Option C"
+                android:textColor="#555555" />
+            <EditText
+                android:id="@+id/etOptC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Third choice option value"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correct Answer"
+                android:textColor="#4A6572"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+            <Spinner
+                android:id="@+id/spinnerCorrectAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:layout_marginBottom="12dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSaveService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Lesson &amp; Proceed"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+</ScrollView>

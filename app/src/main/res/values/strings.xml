@@ -1,0 +1,9 @@
+<resources>
+<string name="app_name">SWE401 SWE2304437</string>
+<string-array name="admin_categories">
+    <item>Users</item>
+    <item>Math Content</item>
+    <item>English Content</item>
+    <item>General Knowledge Content</item>
+</string-array>
+</resources>
